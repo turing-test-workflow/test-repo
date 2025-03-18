@@ -1,0 +1,15 @@
+name: Use Organization Commit Checker
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  commit_check:
+    uses: turing-test-workflow/org-workflows/.github/workflows/commit-message-check.yml@main
