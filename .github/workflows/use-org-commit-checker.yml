@@ -13,3 +13,5 @@ on:
 jobs:
   ai_commit_check:
     uses: turing-test-workflow/org-workflows/.github/workflows/ai-commit-checker.yml@main
+    secrets:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
